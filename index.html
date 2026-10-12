@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,10 +57,19 @@
       animation: appear 900ms ease-out both;
     }
 
-    .status {
+    .tagline {
       margin: -2.5vw 0 0;
-      font-size: clamp(1.05rem, 2.2vw, 1.35rem);
-      font-weight: 400;
+      font-size: clamp(1.4rem, 3.4vw, 2.1rem);
+      font-weight: 500;
+      line-height: 1.25;
+      color: var(--navy);
+    }
+
+    .about {
+      margin: 16px 0 0;
+      max-width: 34em;
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      line-height: 1.6;
       color: var(--slate);
     }
 
@@ -100,7 +109,8 @@
 <body>
   <main>
     <img class="logo" src="logo.png" alt="Kenshoio.com - Technology Solutions" width="1774" height="887">
-    <p class="status">O nosso novo site está a ser preparado.</p>
+    <p class="tagline">Clarity from input to output.</p>
+    <p class="about">In Zen, kensho is seeing the essence of things. At Kenshoio, we turn complex problems into clear, simple tools.</p>
   </main>
   <footer class="foot">
     <a href="privacy.html">Privacy Policy</a>
