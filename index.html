@@ -3,10 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kenshoio</title>
+  <title>Kenshoio.com | Technology Solutions</title>
+  <meta name="description" content="Kenshoio.com - Technology Solutions">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0b1633;
+      --slate: #51607a;
+      --blue: #2f6bff;
+      --violet: #6a3df0;
+      --sky: #0a8bff;
+      --paper: #f7f9ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { height: 100%; margin: 0; }
+
+    body {
+      font-family: "Outfit", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: var(--navy);
+      background:
+        radial-gradient(60vmax 60vmax at 8% 0%, rgba(10, 139, 255, 0.20), transparent 60%),
+        radial-gradient(55vmax 55vmax at 100% 100%, rgba(106, 61, 240, 0.20), transparent 60%),
+        linear-gradient(160deg, #f9fbff 0%, #f1f4ff 55%, #f4f0ff 100%);
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+      padding: 24px;
+    }
+
+    main {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* O logo tem fundo quase branco; "multiply" faz esse fundo fundir-se com o gradiente */
+    .logo {
+      display: block;
+      width: min(960px, 100%);
+      height: auto;
+      mix-blend-mode: multiply;
+      animation: appear 900ms ease-out both;
+    }
+
+    .status {
+      margin: -2.5vw 0 0;
+      font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+      font-weight: 400;
+      color: var(--slate);
+    }
+
+    .contact {
+      margin-top: 28px;
+      display: inline-block;
+      padding: 12px 26px;
+      border-radius: 999px;
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: #fff;
+      text-decoration: none;
+      background: linear-gradient(100deg, var(--sky), var(--blue) 50%, var(--violet));
+      box-shadow: 0 10px 28px rgba(47, 107, 255, 0.28);
+      transition: transform 160ms ease, box-shadow 160ms ease;
+    }
+
+    .contact:hover { transform: translateY(-2px); box-shadow: 0 14px 32px rgba(47, 107, 255, 0.36); }
+    .contact:focus-visible { outline: 3px solid var(--navy); outline-offset: 4px; }
+
+    @keyframes appear {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .logo { animation: none; }
+      .contact { transition: none; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Kenshoio</h1>
-  <p></p>
+  <main>
+    <img class="logo" src="logo.png" alt="Kenshoio.com - Technology Solutions" width="1774" height="887">
+    <p class="status">O nosso novo site está a ser preparado.</p>
+    <a class="contact" href="mailto:contacto@kenshoio.com">contacto@kenshoio.com</a>
+  </main>
 </body>
 </html>
