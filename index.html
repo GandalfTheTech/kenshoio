@@ -79,6 +79,11 @@
     .contact:hover { transform: translateY(-2px); box-shadow: 0 14px 32px rgba(47, 107, 255, 0.36); }
     .contact:focus-visible { outline: 3px solid var(--navy); outline-offset: 4px; }
 
+    .foot { margin-top: 36px; font-size: .95rem; }
+    .foot a { color: var(--slate); text-underline-offset: 3px; }
+    .foot a:hover { color: var(--violet); }
+    .foot a:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
+
     @keyframes appear {
       from { opacity: 0; transform: translateY(10px); }
       to   { opacity: 1; transform: none; }
@@ -93,8 +98,9 @@
 <body>
   <main>
     <img class="logo" src="logo.png" alt="Kenshoio.com - Technology Solutions" width="1774" height="887">
-    <p class="status">Website under development</p>
-    <a class="contact" href="mailto:kenshoio.tech@gmail.com">contact@kenshoio.com</a>
+    <p class="status">O nosso novo site está a ser preparado.</p>
+    <a class="contact" href="mailto:contacto@kenshoio.com">contacto@kenshoio.com</a>
   </main>
+  <footer class="foot"><a href="privacy.html">Privacy Policy</a></footer>
 </body>
 </html>
